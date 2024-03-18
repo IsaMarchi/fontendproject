@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2 meninos na Europa</title>
+<link rel="icon" type="image/gif" href="./Icon/balao-de-ar-quente_284092-657.avif">
+ <!-- Link para os símbolos -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Inclusão da folha de estilos CSS -->
+<link rel="stylesheet" type="Text/css" href="./css/tentativacsscontactus.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+
+<!-- Navigation bar with social media icons -->
+<div class="topnav">
+  <!-- Símbolo da Home -->
+<a href="./Site isadora Silva 2.html"><i class="fas fa-home"></i></a>
+
+<div class="dropdown">
+      <!-- inserção do símbolo sinal "down" <i class="fas fa-chevron-down"> -->
+<button class="dropbtn">Nossas Aventuras <i class="fas fa-chevron-down"></i></button> 
+  <div class="dropdown-content">
+    <a href="Portugal.html">Portugal</a>
+    <a href="França.html">França</a>
+    <a href="momentos.html">Momentos</a>
+  </div>
+</div>
+<a href="./Sobre.html">Quem somos</a>
+<a href="#">Fale conosco</a>
+  <!-- Lupa -->
+<a href="" id="mysearch"><i class="fas fa-search"></i> </a>
+</div>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="./imagens/logo em construção.png" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-black">Hi, seja bem vindo ao "2 meninos na Europa"!</h1>
+      <h1 class="w3-jumbo w3-text-black w3-hide-small"><b>Descubra como é aventurar-se pela Europa com crianças!</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SAIBA MAIS</button></h6>
+    </div>
+  </header>
+ <!-- Grid -->
+<div class="w3-row w3-padding w3-border">
+
+ <!-- Formulario -->
+    <h1>Formulário de contato</h1>
+    <form action="mailto:marchiisadora@gmail.com" method="post" enctype="text/plain">
+        <div class="row">
+        <div class="col-25">
+          <label for="fname">Your Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">E-mail</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="e-mail" placeholder="Your e-mail" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Country">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+            <button type="submit">Submeter</button>
+      </div>
+    </form>
+  </div>
+ </div>  
+ 
+  <!-- Subscribe -->
+  <div class="w3-white w3-margin">
+    <div class="w3-container w3-padding w3-black">
+      <h4>Clubinho dos aventureiros</h4>
+    </div>
+    <div class="w3-container w3-white">
+      <p>Entre com seu melhor e-mail, torne-se um membro do nosso clubinho e receba todas as novidades!</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+      <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+    </div>
+  </div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+<div class="w3-modal-content" style="padding:32px">
+<div class="w3-container w3-white">
+  <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+  <h2 class="w3-wide">SUBSCRIBE</h2>
+  <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+  <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+  <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+<a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<p>Powered by <a href="#" target="_blank"> &copy; copyright-<em>2023</em> - <b>2meninos na Europa</b>&trade;</a></p>    
+</div> 
+
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else { 
+x.className = x.className.replace(" w3-show", "");
+}
+}
+
+function likeFunction(x) {
+x.style.fontWeight = "bold";
+x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

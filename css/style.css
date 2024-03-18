@@ -1,0 +1,316 @@
+* {
+   box-sizing: border-box;}
+
+body {
+    background-color: #f4fab4;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    padding: 20px;
+}
+
+.header {
+    background-color: #a0d2f3;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #44aa6f;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: initial;
+    width: 50%;
+  }
+
+h1 {
+    font-family: 'Josefina Sans', sans-serif;
+}
+
+.header h1 {
+    color: #44aa6f;
+    font-size: 50px;
+}
+
+.header h3 {
+    color:#84b6f4;
+    font-size: 36px;
+}
+
+.topnav,
+.footer {
+    background-color: #84b6f4;
+    color: #f4fab4;
+}
+
+.topnav {
+    padding: 10px;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.topnav a {
+    color: #f4fab4;
+}
+
+.footer {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+  
+  /* Create two columns that sits next to each other */
+
+  .leftcolumn {
+    flex: 70%;
+    padding: 10px;
+    float: left;
+}
+
+.rightcolumn {
+    flex: 30%;
+    padding: 10px;
+    float: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imgabout {
+        text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #44aa6f;
+}
+
+#mysearch {
+  float: right;  
+}
+
+/*menu dropdown 
+   A propriedade overflow define o comportamento de um elemento quando suas dimensões são excedidas pelo conteúdo.
+  O conteúdo excedido não ficará visível.
+*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #2C363F;
+}
+
+.topnav a {
+    float: left; /*esquerda*/
+    font-size: 20px;
+    color: #f4fab4;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    /*border-radius: 30px;*/
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    color: #f4fab4;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #44aa6f;
+    /*border-radius: 30px;*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5589c4;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #f4fab4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #44aa6f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav
+{
+    background-image:linear-gradient(to right,#98c0f6,#5589c4);
+}
+
+.fab:hover{
+     font-size: 20px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5589c4;
+    font-size: 64px;
+}
+
+h5 {
+    font-family: 'Amatic SC', cursive;
+    color:  #44aa6f;
+    font-size: 40px;
+}
+
+    /*breadcrumb*/
+    /*Tipo de esquema de navegação secundário que revela a localização do utilizador num site ou aplicativo da Web.
+    As migalhas de pão em aplicativos do mundo real oferecem-nos uma maneira de indicar o caminho de volta ao ponto partidaoriginal. */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+}
+   
+ul.breadcrumb li::before {
+    padding: 20px;
+    color: black;
+    content: "/";
+}
+
+ul.breadcrumb li:first-child:before {
+     content: "";
+}
+  
+ul.breadcrumb li a:hover {
+    font-size: 25px;
+    color: #5589c4;
+    text-decoration: blink;
+}
+
+/*primeira propriedade que temos de usar quando usamos o sistema flex é o display:flex 
+A primeira e mais importante propriedade serve para colocar todos os elementos-filhos dentro de um container Flex, nela podemos definir o valor flex ou inline-flex.
+Com a propriedade flex-wrap definimos se queremos ou não quebrar a linha */
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Criar quatro colunas iguais que ficam uma ao lado da outra */
+  
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+#galeria{
+    margin-bottom: 40px;
+}
+  
+marquee{
+    font-family: 'Cabin', sans-serif;
+}
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5589c4;
+    font-size: 34px;
+}
+  
+#top{
+  width: 80%;
+}
+
+  /* Layout responsivo - faz um layout de duas colunas em vez de quatro colunas */
+
+@media screen and (max-width: 800px) {
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+  /* Layout responsivo - faz com que as duas colunas se empilhem uma sobre a outra em vez de uma ao lado da outra */
+
+@media screen and (max-width: 600px) {
+.column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+#coluna1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5589c4;
+    font-size: 34px;
+}
+h4 {
+    font-family: 'Amatic SC', cursive;
+    color: #44aa6f;
+    font-size: 26px;
+}
+h5 {
+    font-family: 'Amatic SC', cursive;
+    color: #44aa6f;
+    font-size: 26px;
+}

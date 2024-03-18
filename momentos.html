@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2 meninos na Europa</title>
+<link rel="icon" type="image/gif" href="./Icon/balao-de-ar-quente_284092-657.avif">
+ <!-- Link para os símbolos -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Inclusão da folha de estilos CSS -->
+<link rel="stylesheet" type="Text/css" href="./css/style.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<!-- Navigation bar with social media icons -->
+<div class="topnav">
+  <!-- Símbolo da Home -->
+<a href="./Site isadora Silva 2.html"><i class="fas fa-home"></i></a>
+
+<div class="dropdown">
+      <!-- inserção do símbolo sinal "down" <i class="fas fa-chevron-down"> -->
+<button class="dropbtn">Nossas Aventuras <i class="fas fa-chevron-down"></i></button> 
+  <div class="dropdown-content">
+    <a href="Portugal.html">Portugal</a>
+    <a href="França.html">França</a>
+    <a href="#">Momentos</a>
+  </div>
+</div>
+<a href="./Sobre.html">Quem somos</a>
+<a href="./contact us.html">Fale conosco</a>
+  <!-- Lupa -->
+<a href="" id="mysearch"><i class="fas fa-search"></i> </a>
+</div>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="./imagens/logo em construção.png" alt="Fashion Blog" width="1600" height="1060">
+    <!-- inserção da mensagem no header-->
+    <div class="header"> 
+      <!-- <h3> ... Fotografia ...</h3> --> <!-- scrollamount= velocidade -->
+      <marquee scrollamount="20" id="top">
+    <h3 style="color: #44aa6f"> De fato, o melhor presente que. . .  <span style="color:#54af62">  . . . podes dar a uma criança. . .  
+              <span style="color: #359b5f"> . . . é permitir que ela. . .    <span style="color: #4ba358"> . . . viva uma vida. . .
+                  <span style="color:#23864c"> . . . cheia de aventuras!   <span style="color: #3e944a"> (parafraseando Lewis Carroll)</span>	
+    </h3>
+  </marquee>
+  </div>
+  </header>
+ <!-- Grid -->
+<div class="w3-row w3-padding w3-border">
+
+     <!-- inserção das imagens -->
+
+     <div class="row" id="galeria">
+        <div class="column">
+            <img src="./imagens/chegada.jpg" width="100%" height="auto">
+            <img src="./imagens/braga.jpg"  width="100%" height="auto">
+            <img src="./imagens/buddah.jpg"  width="100%" height="auto">
+            <img src="./imagens/evora.jpg"  width="100%" height="auto">
+            
+        </div>
+
+        <div class="column">
+            <img src="./imagens/fátima.jpg"  width="100%" height="auto">
+            <img src="./imagens/mergulho.jpg"  width="100%" height="auto">
+            <img src="./imagens/neve.jpg"  width="100%" height="auto">
+            <img src="./imagens/obdos.jpg"  width="100%" height="auto">
+        </div>
+
+        <div class="column">
+            <img src="./imagens/oceanario.jpg"  width="100%" height="auto">
+            <img src="./imagens/patinando.jpg"  width="100%" height="auto">
+            <img src="./imagens/carrossel.jpg"  width="100%" height="auto">
+            <img src="./imagens/ladurre.jpg"  width="100%" height="auto">
+        </div>
+
+        <div class="column">
+            <img src="./imagens/paris.jpg"  width="100%" height="auto">
+            <img src="./imagens/historia.jpg"  width="100%" height="auto">
+            <img src="./imagens/luxemburg.jpg"  width="100%" height="auto">
+            <img src="./imagens/disney.jpg"  width="110%" height="auto">
+        </div>
+    </div>
+<!-- Footer -->
+<div class="footer">
+    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p>Powered by <a href="#" target="_blank"> &copy; copyright-<em>2023</em> - <b>2meninos na Europa</b>&trade;</a></p>    
+    </div> 
+    
+    
+  <script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    } else { 
+    x.className = x.className.replace(" w3-show", "");
+    }
+    }
+    
+    function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+    }
+ </script>
+</body>
+</html>

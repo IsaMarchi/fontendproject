@@ -1,0 +1,272 @@
+* {
+   box-sizing: border-box;}
+
+body {
+    background-color: #f4fab4;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    padding: 20px;
+}
+
+.header {
+    background-color: #a0d2f3;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #44aa6f;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: initial;
+    width: 50%;
+  }
+
+h1 {
+    font-family: 'Josefina Sans', sans-serif;
+}
+
+.header h1 {
+    color: #44aa6f;
+    font-size: 50px;
+}
+
+.header h3 {
+    color:#84b6f4;
+    font-size: 36px;
+}
+
+.topnav,
+.footer {
+    background-color: #84b6f4;
+    color: #f4fab4;
+}
+
+.topnav {
+    padding: 10px;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.topnav a {
+    color: #f4fab4;
+}
+
+.footer {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+  
+  /* Create two columns that sits next to each other */
+
+  .leftcolumn {
+    flex: 70%;
+    padding: 10px;
+    float: left;
+}
+
+.rightcolumn {
+    flex: 30%;
+    padding: 10px;
+    float: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imgabout {
+        text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #44aa6f;
+}
+
+#mysearch {
+  float: right;  
+}
+
+/*menu dropdown 
+   A propriedade overflow define o comportamento de um elemento quando suas dimensões são excedidas pelo conteúdo.
+  O conteúdo excedido não ficará visível.
+*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #2C363F;
+}
+
+.topnav a {
+    float: left; /*esquerda*/
+    font-size: 20px;
+    color: #f4fab4;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    /*border-radius: 30px;*/
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    color: #f4fab4;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #44aa6f;
+    /*border-radius: 30px;*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5589c4;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #f4fab4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #44aa6f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav
+{
+    background-image:linear-gradient(to right,#98c0f6,#5589c4);
+}
+
+.fab:hover{
+     font-size: 20px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5589c4;
+    font-size: 64px;
+}
+
+h5 {
+    font-family: 'Amatic SC', cursive;
+    color:  #44aa6f;
+    font-size: 40px;
+}
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #44aa6f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    cursor: pointer;
+  }
+
+.submit: hover {
+    background-color: #44aa6f;
+}
+
+
+}
+  h1 {
+    font-family: 'Amatic SC', cursive;
+    color:  #44aa6f;
+    font-size: 40px;
+}
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.form input:hover;
+.form input:focus;
+.form textarea:hover;
+.form textarea: focus;
+ 
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
